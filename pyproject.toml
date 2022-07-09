@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "flaskblog"
+author = "lerekoqholosha"
+author-email = "lerekoqholosha9@gmail.com"
+requires = [
+  "pandas",
+  "scikit-learn",
+  "flask"
+]
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "black"
+]
